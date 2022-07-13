@@ -1,7 +1,7 @@
 import { IMiddleware } from '@midwayjs/core';
 import { Middleware } from '@midwayjs/decorator';
 import { NextFunction, Context } from '@midwayjs/koa';
-import md5 = require('md5');
+const md5 = require('md5');
 
 @Middleware()
 export class Encryption implements IMiddleware<Context, NextFunction> {
